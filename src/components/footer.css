@@ -1,0 +1,23 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #f8f9fa;
+}
+
+.container__fluid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  border-top: 1px solid #dee2e6;
+}
+
+.icons__sociais ul {
+  display: flex;
+}
+.icons__sociais ul li {
+  padding: 0 15px;
+}
