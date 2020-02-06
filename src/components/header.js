@@ -1,32 +1,54 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSearch } from "@fortawesome/free-solid-svg-icons"
+import logo from "../images/logo-gatsby.svg"
+
 import React from "react"
 
+import "./header.css"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header>
+    <div className="container__fluid">
+      <div className="header">
+        <div className="header__logo">
+          <Link to="/">
+            <img style={{ height: 40 }} src={logo} />
+          </Link>
+        </div>
+
+        <nav>
+          <ul className="header__menu">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/">Produtos</Link>
+            </li>
+            <li>
+              <Link to="/">Preços</Link>
+            </li>
+            <li>
+              <Link to="/">Contato</Link>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <div>
+            <input
+              className="search"
+              type="search"
+              placeholder="Pesquise aqui...."
+            />
+            <button className="button btn__color-search">
+              <span className="">
+                <FontAwesomeIcon icon={faSearch} />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 )
