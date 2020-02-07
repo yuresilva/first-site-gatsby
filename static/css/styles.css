@@ -1,0 +1,60 @@
+.container__header {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__header {
+  width: 50%;
+}
+
+.header__banner img {
+  height: 600px;
+  width: 100%;
+}
+
+.header__banner {
+  width: 50%;
+}
+.title__header {
+  font-size: 60px;
+  line-height: 1.3em;
+  font-weight: 600;
+  color: #202428;
+}
+
+.title__header span {
+  color: #05b993;
+}
+
+.header__description {
+  font-size: 16px;
+  color: #51585f;
+  margin: 20px 0;
+}
+
+.--color__btn-green {
+  background-color: #05b993;
+}
+.--color__btn-roxo {
+  background-color: #705ecf;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
