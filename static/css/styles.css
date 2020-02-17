@@ -1,12 +1,12 @@
-.container__header {
-  flex-wrap: wrap;
-  display: flex;
+.container__fluid {
+  margin: 0 auto;
   width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 .content__header {
+  width: 50%;
+}
+.header__banner {
   width: 50%;
 }
 
@@ -15,9 +15,6 @@
   width: 100%;
 }
 
-.header__banner {
-  width: 50%;
-}
 .title__header {
   font-size: 60px;
   line-height: 1.3em;
@@ -57,4 +54,26 @@
 
 .btn:hover {
   opacity: 0.7;
+}
+
+.feature__title {
+  color: #111;
+  font-size: 40px;
+}
+
+.content__feature {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature__description {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  color: #51585f;
+  font-size: 16px;
+  max-width: 800px;
+  text-align: center;
 }

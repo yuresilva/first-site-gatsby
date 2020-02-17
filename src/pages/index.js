@@ -4,6 +4,7 @@ import "../../static/css/styles.css"
 
 import Layout from "../components/layout"
 import ImgHeader from "../images/banner-header.png"
+import Card from "../components/ui/cards/card"
 
 import SEO from "../components/seo"
 
@@ -11,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section>
-      <div className="container__header">
+      <div className="container__fluid">
         <div className="content__header">
           <h1 className="title__header">
             Entrega <br /> com <br /> <span>Qualidade</span>
@@ -33,6 +34,21 @@ const IndexPage = () => (
         </div>
         <div className="header__banner">
           <img src={ImgHeader} />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div className="container__fluid">
+        <div className="content__feature">
+          <h3 className="feature__title">Recursos</h3>
+          <p className="feature__description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            dummy text dummy text industry. Lorem Ipsum has been the industry's
+            standard
+          </p>
+        </div>
+        <div>
+          <Card />
         </div>
       </div>
     </section>
