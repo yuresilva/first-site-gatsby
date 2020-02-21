@@ -7,8 +7,14 @@ const ButtonLink = styled.a`
   border: none;
   font-size: 14px;
   padding: 10px 15px;
-  border-radius: 0;
+  padding: 15px 20px;
+  border-radius: 4px;
   background-color: ${props => (props.primary ? "#05b993;" : "#705ecf")};
+  transition: all 0.5s;
+
+  &&:hover {
+    opacity: 0.8;
+  }
 `
 
 export default ButtonLink

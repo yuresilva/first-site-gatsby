@@ -9,11 +9,12 @@ const Button = styled.button`
   padding: 10px 15px;
   border-radius: 0;
   background-color: ${props => (props.primary ? "#05b993;" : "#705ecf")};
-`
+  transition: all 0.5s;
 
-const Button = props => {
-  return <button>{props.text}</button>
-}
+  &&:hover {
+    opacity: 0.8;
+  }
+`
 
 Button.propTypes = {
   height: PropTypes.string,

@@ -8,9 +8,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Footer from "./base/footer"
+import styled from "styled-components"
 
+import ContactForm from "../components/moleculas/formContact"
 import Header from "./base/header"
+
+const SectionBgCinza = styled.div`
+  background: #f8f9fa;
+  width: 100%;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,8 +40,10 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Footer />
       </div>
+      <SectionBgCinza>
+        <ContactForm />
+      </SectionBgCinza>
     </>
   )
 }

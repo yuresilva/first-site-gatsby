@@ -15,21 +15,8 @@
   width: 100%;
 }
 
-.title__header {
-  font-size: 60px;
-  line-height: 1.3em;
-  font-weight: 600;
-  color: #202428;
-}
-
 .title__header span {
   color: #05b993;
-}
-
-.header__description {
-  font-size: 16px;
-  color: #51585f;
-  margin: 20px 0;
 }
 
 .--color__btn-green {
